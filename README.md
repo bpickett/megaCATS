@@ -1,7 +1,7 @@
 # megaCATS
 
 ##Background
-The megaCATS code implements an iterative version of the meta-CATS algorithm [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5040469/]. Briefly, this algorithm implements a chi-square test of independence AND a chi-square goodness of fit test. The p-values that are generated indicate aligned columns that contain a significant skew in the distribution of nucleotides or amino acids between 2 (or more) groups of sequences.
+The megaCATS code implements an iterative version of the meta-CATS algorithm [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5040469/], which is available in the Virus Pathogen Resource (ViPR; www.viprbrc.org) and Influenza Research Database (IRD; www.fludb.org). Briefly, this algorithm implements a chi-square test of independence AND a chi-square goodness of fit test. The p-values that are generated indicate aligned columns that contain a significant skew in the distribution of nucleotides or amino acids between 2 (or more) groups of sequences.
 
 ##Input
 The algorithm requires a multiple sequence alignment in fasta format, as well as a table with the first column containing the same string name that is used in the alignment file. Subsequent columns indicate the metadata category as well as the assignment for each sample. **Note that the end of line characters in both files are required to be Unix-friendly and the metadata table should be tab-delimited.
