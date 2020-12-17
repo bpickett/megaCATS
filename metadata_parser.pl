@@ -1,5 +1,5 @@
 ############################
-# Written by: Brett Pickett at JCVI (May 2016)
+# Written by: Brett Pickett
 # Input 1: multiple sequence alignment in fasta format and 
 # Input 2 TSV file with ID (matching fasta header) in first column and each metadata category in additional columns
 # Output 1: meta-CATS Goodness of Fit test results for each metadata category
@@ -12,11 +12,8 @@ use strict;
 use warnings;
 use Statistics::R;
 
-my $metaDataFile = 'test_metadata.txt';
-my $seqFile = 'fasta_input.afa'; #aligned sequences
-#my $metaDataFile = 'SARS-CoV-2_metadata.tsv';
-#my $seqFile = 'gisaid_hcov-19_2020_05_19_17-withNC.fasta.afa'; #aligned sequences
-
+my $metaDataFile = 'CH2-metadata.tsv';
+my $seqFile = 'CH2-49NP.fasta.afa'; #aligned sequences
 
 my %categories;
 my $lineNum = 0;
